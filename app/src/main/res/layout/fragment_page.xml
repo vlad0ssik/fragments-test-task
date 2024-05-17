@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_primary">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/notificationCardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/without_corners"
+        android:backgroundTint="@color/background_button"
+        android:clickable="true"
+        android:text="@string/create_new_notification"
+        android:textSize="25sp"
+        android:translationZ="20dp"
+        app:cardCornerRadius="1000dp"
+        app:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3">
+
+        <Button
+            android:id="@+id/createNotification"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/background_button"
+            android:text="@string/create_new_notification"
+            android:textSize="25sp"
+            app:cornerRadius="1000dp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/countOfPage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/without_corners"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notificationCardView"
+        app:layout_constraintVertical_bias="0.747"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <ImageButton
+        android:id="@+id/minus_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/without_corners"
+        android:backgroundTint="#FEFEFE"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/countOfPage"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHeight_percent="0.06"
+
+        app:layout_constraintStart_toStartOf="@+id/countOfPage"
+        app:layout_constraintTop_toTopOf="@+id/countOfPage"
+        app:srcCompat="@drawable/baseline_horizontal_rule_24" />
+
+    <ImageButton
+        android:id="@+id/add_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/without_corners"
+        android:backgroundTint="#FEFEFE"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/countOfPage"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/countOfPage"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintTop_toTopOf="@+id/countOfPage"
+        app:srcCompat="@drawable/baseline_add_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
