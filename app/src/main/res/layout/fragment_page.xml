@@ -31,6 +31,8 @@
             android:id="@+id/createNotification"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:textColor="@color/white"
+            app:layout_constraintDimensionRatio="1:1"
             android:backgroundTint="@color/background_button"
             android:text="@string/create_new_notification"
             android:textSize="25sp"
